@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/yelpbiz-style.css">
+
+</head>
+<body>
+  <p id="hi"></p>
+  <div>
+   <div class="banner">
+
+      <img src="https://csci571.com/hw/hw6/images/banner.jpeg">
+      <div class="bannertxt1"><b>Business Search</b></div>
+      <div class="bannertxt2">Fill out the form to get businesses near you!</div>
+      <br>
+    </div>
+      <br>
+      <form id="custinput" >
+        
+        <label class="reqfield" for="keyword">Keyword</label>
+        <br>
+        <input type="text" id="keyword" name="keyword" required>
+        
+        <br>
+
+        <label for="distance">Distance(miles)</label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;<label class="reqfield" for="category">Category</label>
+        <br>
+        <input type="text" id="distance" name="distance" value="10" required>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+        <select id="category" name="category">
+          <option value="All" selected="selected"> Default </option>
+          <option value="arts"> Arts & Entertainment </option>
+          <option value="health"> Health & Medical </option>
+          <option value="hotelstravel"> Hotels & Travel </option>
+          <option value="food"> Food </option>
+          <option value="professional"> Professional Services </option>
+          
+        </select>
+        <br>
+
+        <label class="reqfield" for="location">Location</label>
+        <br>
+        <input type="text" id="location" name="location" required>
+        <br>
+        <hr id="blueline">
+        
+        <label id="autoloc" for="autolocation">Want us to auto-detect your location? Check here</label>
+        <input type="checkbox" id="autolocation" name="autolocation" onclick="disableloc()">
+        <br>
+        <br>
+        <button type="submit" id="submitbtn" onclick="formvali()">SUBMIT</button>
+        <button type="button" id="clearbtn"  onclick="formreset()">CLEAR</button>
+       </form>
+      
+    
+      </div>
+
+  <br><br>
+  <div id="tablediv"> </div>
+
+  <br><br>
+  <div id="deets"> </div>
+<script src="/static/yelpbiz-javascript.js"></script>
+
+</body>
+
+
+</html>
+
+
+
+
+</html>
